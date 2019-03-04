@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0" language="jambi">
+ <class>clickerAppForm</class>
+ <widget class="QWidget" name="clickerAppForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>871</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>461</width>
+    <height>871</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>461</width>
+    <height>871</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ClickerApplication</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: lightblue;</string>
+  </property>
+  <widget class="QFrame" name="speedometerFrame">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>120</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000; 
+background: lightgrey;
+border: 1px solid lightgrey; 
+border-radius: 16px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>com.trolltech.qt.gui.QFrame.Shape.StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>com.trolltech.qt.gui.QFrame.Shadow.Raised</enum>
+   </property>
+   <widget class="QLabel" name="speedometerLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: grey;
+border: 1px solid grey;
+color: #fff;
+border-radius: 8px;
+</string>
+    </property>
+    <property name="text">
+     <string>$0.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bestRecordLabel">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: grey;
+border: 1px solid grey;
+color: orange;
+border-radius: 8px;
+</string>
+    </property>
+    <property name="text">
+     <string>$0.00</string>
+    </property>
+   </widget>
+   <zorder>speedometerLabel</zorder>
+   <zorder>bestRecordLabel</zorder>
+   <zorder>secondBillFrame</zorder>
+  </widget>
+  <widget class="QFrame" name="moneyPackFrame">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>270</y>
+     <width>331</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: darkgreen;</string>
+   </property>
+   <property name="frameShape">
+    <enum>com.trolltech.qt.gui.QFrame.Shape.StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>com.trolltech.qt.gui.QFrame.Shadow.Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="headerFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>461</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: navy;</string>
+   </property>
+   <property name="frameShape">
+    <enum>com.trolltech.qt.gui.QFrame.Shape.StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>com.trolltech.qt.gui.QFrame.Shadow.Raised</enum>
+   </property>
+   <widget class="QLabel" name="counterLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>$0.00</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="blindFrame">
+   <property name="geometry">
+    <rect>
+     <x>461</x>
+     <y>0</y>
+     <width>461</width>
+     <height>871</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>461</width>
+     <height>871</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgba(0, 0, 0, 230)</string>
+   </property>
+   <property name="frameShape">
+    <enum>com.trolltech.qt.gui.QFrame.Shape.StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>com.trolltech.qt.gui.QFrame.Shadow.Raised</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="firstUpperBillPushButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>270</y>
+     <width>271</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>80</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: limegreen; color: darkgreen;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="secondUpperBillPushButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>-430</y>
+     <width>271</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>80</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: limegreen; color: darkgreen</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+  </widget>
+  <zorder>secondUpperBillPushButton</zorder>
+  <zorder>speedometerFrame</zorder>
+  <zorder>moneyPackFrame</zorder>
+  <zorder>headerFrame</zorder>
+  <zorder>blindFrame</zorder>
+  <zorder>firstUpperBillPushButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
